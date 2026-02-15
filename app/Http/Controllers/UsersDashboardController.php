@@ -186,4 +186,12 @@ class UsersDashboardController extends Controller
     public function GiftCode(){
         return view('users.gift_code');
     }
+    // about us
+    public function AboutUs(){
+        return view('users.about');
+    }
+      // faqs
+    public function FAQs(){
+        return view('users.faqs');
+    }
 }

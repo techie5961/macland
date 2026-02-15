@@ -2,6 +2,6 @@
 return [
     'withdrawal' => 'manual',
     'deposit' => 'manual',
-    'daily_gift' => 'gift_code'
+    'daily_gift' => 'check_in'
 ];
 ?>

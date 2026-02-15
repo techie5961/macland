@@ -121,6 +121,12 @@ Route::prefix('users')->group(function(){
     Route::get('gift/code',[
         UsersDashboardController::class,'GiftCode'
     ]);
+    Route::get('about',[
+        UsersDashboardController::class,'AboutUs'
+    ]);
+    Route::get('faq',[
+        UsersDashboardController::class,'FAQs'
+    ]);
     
 
 

@@ -17,7 +17,7 @@
  {{-- NAVS --}}
  <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full navs row p-10 br-10 g-10 bg-light">
     {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/deposit') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,blue,rgb(1, 1, 97));color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/deposit') }}')" style="min-height=100% !important;max-width:25% !important;background: black;color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,168,96H136V32a8,8,0,0,0-16,0V96H88a8,8,0,0,0-5.66,13.66Z"></path></svg>
             
@@ -25,7 +25,7 @@
         <strong class="text-center">Deposit</strong>
     </div>
      {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/withdraw') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,#4caf50,green);color:white" class="w-full h-full nav p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/withdraw') }}')" style="min-height=100% !important;max-width:25% !important;background: rgb(108,92,230);color:white" class="w-full h-full nav p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0ZM88,80h32v64a8,8,0,0,0,16,0V80h32a8,8,0,0,0,5.66-13.66l-40-40a8,8,0,0,0-11.32,0l-40,40A8,8,0,0,0,88,80Z"></path></svg>
 
@@ -33,7 +33,7 @@
         <strong class="text-center">Withdraw</strong>
     </div>
       {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/products') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,rgb(248, 102, 49),orangered);color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="spa(event,'{{ url('users/products') }}')" style="min-height=100% !important;max-width:25% !important;background: red;color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM128,160a48.05,48.05,0,0,1-48-48,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0A48.05,48.05,0,0,1,128,160ZM40,72V56H216V72Z"></path></svg>
 
@@ -41,12 +41,12 @@
         <strong class="text-center">My Products</strong>
     </div>
       {{-- NAV --}}
-    <div onclick="spa(event,'{{ url('users/gift/code') }}')" style="min-height=100% !important;max-width:25% !important;background: linear-gradient(to bottom right,purple,rgb(59, 1, 59));color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
+    <div onclick="GetRequest(event,'{{ url('users/daily/check/in') }}',this,MyFunc.CheckedIn)" style="min-height=100% !important;max-width:25% !important;background:navy;color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16h60a4,4,0,0,0,4-4V120H40V88h80v32h16V88h80v32H136v92a4,4,0,0,0,4,4h60a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM84.51,59a13.69,13.69,0,0,1-4.5-10A16.62,16.62,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92C109.71,70.39,94,67.43,84.51,59Zm87,0c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08,13.69,13.69,0,0,1,171.49,59Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="30" width="30"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-52.2,6.84-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
 
         </div>
-        <strong class="text-center">Gift Code</strong>
+        <strong class="text-center">Check-In</strong>
     </div>
  </div>
 
@@ -83,7 +83,7 @@
         {{-- PURCHASE BUTTON --}}
        
         <div onclick="MyFunc.ShowSlideUp('{{ $data->name }}','&#8358;{{ number_format($data->price,2) }}','{{ url('users/get/purchase/product/confirm?id='.$data->id.'') }}')" style="box-shadow:0 0 2px var(--primary);" class="w-full font-1 pointer br-10 p-10 bg-primary primary-text column justify-center align-center">
-            Add to Portfolio
+            Purchase
         </div>
         </div>
     @endforeach
@@ -175,16 +175,23 @@
     },
     Restyle : function(){
       let max_height=0;
-      document.querySelectorAll('.navs .nav').forEach((nav)=>{
+      document.querySelectorAll('main .navs .nav').forEach((nav)=>{
         if(nav.getBoundingClientRect().height > max_height){
           max_height = nav.getBoundingClientRect().height;
         }
       });
-      document.querySelectorAll('.navs .nav').forEach((nav)=>{
+      document.querySelectorAll('main .navs .nav').forEach((nav)=>{
         nav.style.height=max_height + 'px';
          });
    
      
+    },
+    CheckedIn : function(response,event){
+      let data=JSON.parse(response);
+      CreateNotify(data.status,data.message);
+    if(data.status == 'success'){
+      spa(event,'{{ url()->current() }}')
+    }
     }
   
    }

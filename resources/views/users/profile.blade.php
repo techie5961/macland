@@ -144,6 +144,36 @@
                 </span>
             </div>
         </div>
+         {{-- PLATFORM/COMPANY --}}
+        <div style="border-bottom:1px solid rgba(0,0,0,0.1)" class="w-full column p-10">
+            <strong class="desc opacity-07">COMPANY</strong>
+            {{-- ABOUT US --}}
+            <div  onclick="spa(event,'{{ url('users/about') }}')" class="p-10 no-select pc-pointer g-10 row align-center">
+                <span class="c-primary">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="20" width="20"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1-12,12A12,12,0,0,1,124,72Zm12,112a16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40a8,8,0,0,1,0,16Z"></path></svg>
+
+                </span>
+                <span class="font-1">About us</span>
+                <span class="m-left-auto opacity-05">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="15" width="15"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
+
+                </span>
+            </div>
+            {{-- FAQ --}}
+             <div  onclick="spa(event,'{{ url('users/faq') }}')" class="p-10 no-select pc-pointer g-10 row align-center">
+                <span class="c-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="20" width="20"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,168a12,12,0,1,1,12-12A12,12,0,0,1,128,192Zm8-48.72V144a8,8,0,0,1-16,0v-8a8,8,0,0,1,8-8c13.23,0,24-9,24-20s-10.77-20-24-20-24,9-24,20v4a8,8,0,0,1-16,0v-4c0-19.85,17.94-36,40-36s40,16.15,40,36C168,125.38,154.24,139.93,136,143.28Z"></path></svg>
+
+
+                </span>
+                <span class="font-1">FAQs</span>
+                <span class="m-left-auto opacity-05">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="CurrentColor" height="15" width="15"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
+
+                </span>
+            </div>
+           
+        </div>
           {{-- SETTINGS --}}
         <div class="w-full column p-10">
             <strong class="desc opacity-07">SETTINGS</strong>
